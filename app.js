@@ -1,4 +1,4 @@
-fetch('https://restcountries.eu/rest/v2/all')
+fetch('https://restcountries.eu/rest/v2/all') // website : https://restcountries.eu/
     
 
    .then(res => res.json())
@@ -19,7 +19,8 @@ const displayCountries = countries => {
        const countDiv = document.createElement('div');
        const h3 = document.createElement('h3');
        h3.innerText = city.name;
-
+// Paragraph and h3 tag ... element add on webpage :
+// example .. country name and city name display in webpage 
        const p = document.createElement('p');
        p.innerText = city.capital;
        countDiv.appendChild(h3);

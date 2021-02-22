@@ -5,14 +5,25 @@
 
 
 
-#ul-continer{
+.style{
 
+    padding: 20px;
 
-color: blue;
-padding: 45px;
-
+    text-align: center;
+   
+    
 
 
 }
+
+
+.country{
+
+
+    border: 1px solid blue;
+    text-align: center;
+    border-radius: 5px;
+}
+
 
 

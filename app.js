@@ -17,21 +17,34 @@ const displayCountries = countries => {
 
        console.log(city.name);
        const countDiv = document.createElement('div');
-       const h3 = document.createElement('h3');
-       h3.innerText = city.name;
+
+       countDiv.className ='country';
+
+      // const h3 = document.createElement('h3');
+       //h3.innerText = city.name;
 // Paragraph and h3 tag ... element add on webpage :
 // example .. country name and city name display in webpage 
-       const p = document.createElement('p');
-       p.innerText = city.capital;
-       countDiv.appendChild(h3);
-       countDiv.appendChild(p);
+      // const p = document.createElement('p');
+       //p.innerText = city.capital;
+       //countDiv.appendChild(h3);
+       //countDiv.appendChild(p);
+
+       // Short Cut Way working :
+
+       //================================================================
+       const countryInfo =` 
+
+       <h3 class="style"> ${city.name}</h3>
+       <p> ${city.capital}</p>
+
+       `
+       countDiv.innerHTML = countryInfo;
+
        countryDiv.appendChild(countDiv);
 
 
      //  li.innerText = city.name;
       // ul.appendChild(li);
-
-
 
 
     }
